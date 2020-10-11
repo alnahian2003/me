@@ -1339,6 +1339,9 @@ select {
     -ms-flex: 0 0 100%;
     max-width: 100%;
   }
+  .copyright-text{
+  display: none;
+  }
 }
 
 /* Custom Select Box */
