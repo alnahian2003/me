@@ -20,7 +20,7 @@ window.ityped.init(document.querySelector(".iTyped"), {
     "Front End Developer",
     "WordPress Expert",
     "Graphic Designer",
-    "Content Writter",
+    "Content Writer",
   ],
   loop: true,
   typeSpeed: 100,
