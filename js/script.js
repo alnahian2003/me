@@ -229,5 +229,5 @@ function latestTheme() {
     toggleSwitch.checked = true;
   }
 }
-
+// Initialize the localstorage
 latestTheme();
