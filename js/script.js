@@ -206,11 +206,28 @@ function asideSectionTogglerBtn() {
 
 // Dark Mode Toggle Button
 var isDark = true;
-document.querySelector(".toggle-style-switcher").addEventListener("click", function () {
+const toggleSwitch = document.querySelector(".toggle-style-switcher");
+toggleSwitch.addEventListener("click", function () {
   if (isDark) {
-    document.body.className = "dark";
+    document.body.classList.remove("light");
+    document.body.classList.add("dark");
+    // Add Light Theme in LocalStorage
+    localStorage.setItem("theme", "dark")
   } else {
-    document.body.className = "";
+    document.body.classList.remove("dark");
+    document.body.classList.add("light");
+    localStorage.removeItem("theme");
   }
   isDark = !isDark;
 })
+
+
+// Get Theme From Local Storage while Toggle Switch is Clicked
+function latestTheme() {
+  if (localStorage.getItem("theme")) {
+    document.body.classList.add('dark');
+    toggleSwitch.checked = true;
+  }
+}
+
+latestTheme();

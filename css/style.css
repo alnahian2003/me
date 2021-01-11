@@ -252,8 +252,8 @@ select {
   border-radius: 50%;
   border-top: 4px solid transparent;
   border-bottom: 4px solid transparent;
-  animation: spin 2s linear infinite;
-  -webkit-animation: spin 2s linear infinite;
+  animation: spin .5s linear infinite;
+  -webkit-animation: spin .5s linear infinite;
 }
 
 @keyframes spin {
@@ -1305,6 +1305,7 @@ select {
 }
 
 @media (max-width: 991px) {
+
   .service .service-item,
   .blog .blog-item,
   .portfolio .portfolio-item {
@@ -1315,6 +1316,7 @@ select {
 }
 
 @media (max-width: 767px) {
+
   .about .about-content .personal-info,
   .contact .contact-form .col-6,
   .service .service-item,
@@ -1333,14 +1335,16 @@ select {
 }
 
 @media (max-width: 575px) {
+
   .portfolio .portfolio-item,
   .contact .contact-info-item {
     flex: 0 0 100%;
     -ms-flex: 0 0 100%;
     max-width: 100%;
   }
-  .copyright-text{
-  display: none;
+
+  .copyright-text {
+    display: none;
   }
 }
 
@@ -1382,12 +1386,12 @@ select {
   outline: none;
 }
 
-.select-box__current:focus + .select-box__list {
+.select-box__current:focus+.select-box__list {
   opacity: 1;
   animation-name: none;
 }
 
-.select-box__current:focus + .select-box__list .select-box__option {
+.select-box__current:focus+.select-box__list .select-box__option {
   cursor: pointer;
 }
 
@@ -1413,7 +1417,7 @@ select {
   display: none;
 }
 
-.select-box__input:checked + .select-box__input-text {
+.select-box__input:checked+.select-box__input-text {
   display: block;
 }
 
