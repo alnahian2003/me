@@ -1487,10 +1487,11 @@ select {
 }
 
 /* Notification Link Style Color */
-#notifiaction > a{
+.notif-link{
     color: #fff !important;
     font-weight: bold;
 }
+
 /* Show the notification when clicking on a button (class added with JavaScript) */
 #notification.show {
   visibility: visible; /* Show the notification */
