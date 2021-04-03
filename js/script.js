@@ -231,3 +231,19 @@ function latestTheme() {
 }
 // Initialize the localstorage
 latestTheme();
+
+// Lunch The Notifiaction
+  function lunchNotifiaction() {
+    // Get the snackbar DIV
+    var x = document.getElementById("notification");
+
+    // Add the "show" class to DIV
+    x.className = "show";
+
+    // After 30 seconds, remove the show class from DIV
+    setTimeout(function () {
+      x.className = x.className.replace("show", "hide");
+    }, 30000);
+  }
+// Initialize theNotification
+document.body.onload = lunchNotifiaction();
