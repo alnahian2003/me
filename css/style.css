@@ -1464,3 +1464,78 @@ select {
     transform: scaleY(0);
   }
 }
+
+/* Toast Styling */
+#notification {
+  visibility: hidden;
+  width: auto;
+  height: auto;
+  /*margin-left: -125px;*/
+  margin: auto;
+  background-color: #00bf6c;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 20px;
+  white-space: normal;
+  padding: 10px;
+}
+
+/* Show the notification when clicking on a button (class added with JavaScript) */
+#notification.show {
+  visibility: visible; /* Show the notification */
+  /* Add animation: Take 0.5 seconds to fade in and out the notification.
+    However, delay the fade out process for 2.5 seconds */
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 30s;
+  animation: fadein 0.5s, fadeout 0.5s 30s;
+}
+
+/* Animations to fade the notification in and out */
+@-webkit-keyframes fadein {
+  from {
+    bottom: -50px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    bottom: -50px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 0;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeout {
+  from {
+    bottom: 0;
+    opacity: 1;
+  }
+  to {
+    bottom: 0;
+    opacity: 0;
+  }
+}
