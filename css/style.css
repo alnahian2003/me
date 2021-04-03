@@ -1487,7 +1487,7 @@ select {
 }
 
 /* Notification Link Style Color */
-#notifiaction> a{
+#notifiaction > a{
     color: #fff !important;
     font-weight: bold;
 }
