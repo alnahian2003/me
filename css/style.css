@@ -1465,7 +1465,7 @@ select {
   }
 }
 
-/* Toast Styling */
+/* Notifiaction Styling */
 #notification {
   visibility: hidden;
   width: auto;
@@ -1486,6 +1486,10 @@ select {
   padding: 10px;
 }
 
+/* Notification Link Style Color */
+#notifiaction a{
+  color: #fff !important;
+}
 /* Show the notification when clicking on a button (class added with JavaScript) */
 #notification.show {
   visibility: visible; /* Show the notification */
