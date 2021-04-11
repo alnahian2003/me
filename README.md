@@ -2,4 +2,4 @@
 I'm Al Nahian, a Web Developer, Graphic Designer, and Content Writer based in Bangladesh. I love to provide awesome services to my lovely clients. Hire me now!
 
 ## Preview
-<img scr="https://raw.githubusercontent.com/alnahian2003/me/main/me-ss.jpg"/>
+<img src="https://raw.githubusercontent.com/alnahian2003/me/main/me-ss.jpg"/>
